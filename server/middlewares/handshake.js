@@ -30,6 +30,7 @@ async function handshake(socket, next) {
 			}
 
 			socket.join(authUser.role.name);
+      socket.join(`user_${ user.id }`);
 		} catch (error) {
 			next(error);
 		}

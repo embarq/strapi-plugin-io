@@ -1,7 +1,6 @@
 'use strict';
 
 const { IO } = require('./structures/IO');
-const IOMiddleware = require('./middlewares/io');
 
 module.exports = async ({ strapi }) => {
 	const { getService } = require('./utils/getService');
@@ -17,9 +16,6 @@ module.exports = async ({ strapi }) => {
 	// setup io
 	// initialize
 	strapi.$io = new IO(normalizedSettings.IOServerOptions);
-
-	// add io middleware
-	IOMiddleware({ strapi });
 
 	// add any io server events
 	if (normalizedSettings.events && normalizedSettings.events.length) {
