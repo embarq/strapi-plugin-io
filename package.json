@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json.schemastore.org/package",
-	"name": "strapi-plugin-io",
+	"name": "@embarq/strapi-plugin-io",
 	"version": "1.1.4",
 	"description": "A plugin for Strapi CMS that provides the ability for Socket IO integration",
 	"scripts": {
@@ -13,22 +13,18 @@
 	},
 	"maintainers": [
 		{
-			"name": "@ComfortablyCoding",
-			"url": "https://github.com/ComfortablyCoding",
+			"name": "@embarq",
+			"url": "https://github.com/embarq",
 			"lead": true
-		},
-		{
-			"name": "@hrdunn",
-			"url": "https://github.com/hrdunn"
 		}
 	],
-	"homepage": "https://github.com/ComfortablyCoding/strapi-plugin-io#readme",
+	"homepage": "https://github.com/embarq/strapi-plugin-io#readme",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/ComfortablyCoding/strapi-plugin-io.git"
+		"url": "https://github.com/embarq/strapi-plugin-io.git"
 	},
 	"bugs": {
-		"url": "https://github.com/ComfortablyCoding/strapi-plugin-io/issues"
+		"url": "https://github.com/embarq/strapi-plugin-io/issues"
 	},
 	"dependencies": {
 		"socket.io": "^4.4.1"
